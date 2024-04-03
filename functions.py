@@ -21,6 +21,7 @@ def view_quotes(quotes):
     for quote in quotes:
         print_quote(quote)
 
+main
 #add quotes
 def add_quote(quotes, filename):
     new_quote = input("Enter a new quote: ")
@@ -28,3 +29,14 @@ def add_quote(quotes, filename):
 
     with open(filename, 'a') as file:
         file.write(new_quote)
+
+# display quotes function
+def display_quotes(quotes, count):
+    if count >= len(quotes):
+        print("All Quotes:")
+        view_quotes(quotes)
+    else:
+        print(f"First {count} Quotes:")
+        for i in range(count):
+            print_quote(quotes[i])
+main
