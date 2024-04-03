@@ -21,6 +21,7 @@ def view_quotes(quotes):
     for quote in quotes:
         print_quote(quote)
 
+# display quotes function
 def display_quotes(quotes, count):
     if count >= len(quotes):
         print("All Quotes:")
