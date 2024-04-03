@@ -5,6 +5,7 @@ def menu():
     print("1. Random quote")
     print("2. All quotes")
     print("3. Exit")
+    print("4.Add quote")
 
 def main():
     while True:
@@ -20,8 +21,8 @@ def main():
         elif choice == "3":
             print("Good bye...")
             break
-        else:
-            print("Invalid input")
+        elif choice =="4":
+            add_quote(quotes, filename)
 
 if __name__ == "__main__":
     main()
